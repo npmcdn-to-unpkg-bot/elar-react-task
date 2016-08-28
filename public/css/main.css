@@ -1,0 +1,119 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  background-color: #fff;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1061px;
+  margin: 0 auto;
+}
+
+.page__wrapper {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 1061px) {
+  .container {
+    padding: 0 15px;
+    width: 100%;
+  }
+}
+
+.tasks__wrapper {
+  width: 800px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.tasks__header {
+  padding: 25px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #5B9BD5;
+}
+
+.tasks__list {
+  min-height: 300px;
+  padding: 20px 0 15px;
+}
+
+.form__input {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #47759F;
+  border: 1px solid #ADCDEA;
+}
+
+.form__input.form__input--date {
+  margin-right: 10px;
+  width: 30%;
+}
+
+.form__input.form__input--text {
+  width: 68.5%;
+}
+
+.form__button {
+  float: right;
+  width: 35%;
+  margin-top: 20px;
+  padding: 13px 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: #5B9BD5;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.task {
+  width: 100%;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #47759F;
+  border: 1px solid #ADCDEA;
+}
+
+.task__date,
+.task__name {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.task__date {
+  margin-right: 10px;
+}
+
